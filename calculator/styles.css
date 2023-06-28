@@ -1,0 +1,90 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito','sans-serif';
+    background: linear-gradient(#D9D4C8,#A0ADB6);
+}
+
+.calci{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 30vh;
+    min-height: 50vh;
+    background-color: #DADFE0;
+    border-radius: 20px;
+    padding: 0.7rem;
+}
+
+.display{
+    align-self: center;
+    width: 95%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #363636;
+    color: #2becf5;
+    border-radius: 20px;
+    padding-right: 5%;
+    overflow: hidden;
+}
+.display>p{
+    font-size: 1.9em;
+    margin: 5%;
+    max-width: 80%;
+}
+#value{
+    min-height: 3rem;
+}
+
+.btncontent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    width: 95%;
+    flex-grow: 1;
+    gap: 5%;
+}
+button{
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: large;
+    padding: 10%;
+    border-style: none;
+    background: linear-gradient(#c4d1d1,#e6e8ea);
+    box-shadow: 0px 3px 8px #aaa, inset 0px 1px 1px #fff
+}
+button:active{
+    box-shadow: 0px 2px 3px #aaa,inset 0px 1px 1px #fff
+}
+.zero{
+    grid-column: span 2;
+    border-radius: 50px;
+}
+.signs{
+    font-size: larger;
+    background: linear-gradient(#97adaf,#b9cacb);
+}
+.ac{
+    background: linear-gradient(#97adaf,#b9cacb);
+}
+.equal{
+    background: linear-gradient(#1ea1be,#32cad9);
+    border-radius: 50%;
+}
+.di{
+    box-shadow: 0px 3px 8px #aaa, inset 0px 1px 1px #859fa2
+}
+.mrc{
+    font-size: medium;
+}
+.dark-light{
+    font-size: medium;
+}
+/* .plus{
+    grid-row: span 2;
+    border-radius: 20px;
+} */
+
