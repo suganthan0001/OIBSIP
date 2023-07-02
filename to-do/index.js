@@ -23,15 +23,13 @@ function addItem(){
 
 function arrowClick(ele){
     const targetdiv = ele.parentNode;
-    // first the select the element which u want to remove
+    // first select the element which u want to remove
 
 
     setTimeout(() => {
         const text = targetdiv.children[0];
         text.setAttribute("class","line-through-effect");
       }, 200);
-
-
 
 
     const arrow = targetdiv.querySelector("#arrow");
