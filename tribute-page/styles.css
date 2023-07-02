@@ -1,3 +1,146 @@
 body{
-    
+    font-family: 'Montserrat', sans-serif;
+    background-color: #a3b7b9;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    padding: 0 3em;
+    min-height: 100vh;
+    margin: 0;
+    column-gap: 2em;
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
+.about{
+    gap: 2em;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em 2em;
+    width: 20em;
+}
+.container:hover{
+    box-shadow: 0 0 1em white;
+}
+img{
+    border-radius: 10px;
+}
+.about-inner > img{
+    min-width: 9em;
+    max-width: 9em;
+    height: 10em;
+    border-radius: 10px;
+}
+
+.about-inner{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.one, .two, .three{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4em;
+}
+.two{
+    padding-top: 4em;
+}
+
+.b{
+    font-weight: 600;
+}
+h1{
+    font-weight: 800;
+    font-size: 2.1em;
+}
+.movement-salt{
+    text-align: center;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.movement-salt>div{
+    position: relative;
+    border-radius: 10px;
+    background-image:
+    linear-gradient(transparent, rgba(0, 0, 0, 0.73)),
+    url('Mahatma-Gandhi-Dandi-march.jpg');
+    height: 20em;
+    background-size: 100% 70%, cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: 200ms;
+}
+.movement-salt>div:hover{
+    background-size: 100% 120%, cover;
+}
+.dandi{
+    position: absolute;
+    bottom: 2em;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+
+hr{
+    width: 3em;
+    height: 0.3em;
+    border-radius: 20px;
+    background-color: #51e099;
+    border: none;
+}
+
+.mahatmaGandhi{
+    min-height: 40em;
+    background-image: url("mahatma\ gandhi\ 1.jpg");
+    background-position: bottom;
+    background-size: 100% 70%,contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mahatmaGandhi>p{
+    padding: 0 3em;
+    font-weight: 300;
+}
+
+.mahatmaGandhi p:nth-child(1){
+    font-weight: 600;
+    color: grey;
+}
+
+.explore{
+    bottom: 3em;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #51e099;
+    padding: 0.7em 4em;
+    transition: 200ms;
+    font-weight: 600;
+    border: none;
+    color: white;
+}
+.explore:hover{
+    box-shadow: 0 0 1em #51e099;
+}
+
+.about p{
+    text-align: left;
+    color: black;
+    font-weight: 300;
+}
+.about{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
